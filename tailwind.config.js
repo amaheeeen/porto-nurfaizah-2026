@@ -2,18 +2,18 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // <--- Ini perintah untuk scan folder src
+    "./work.html",      // <-- Tambahkan ini
+    "./contact.html",   // <-- Tambahkan ini
+    "./showcase.html",  // <-- Tambahkan ini
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./**/*.html",      // <-- Atau cara sapu jagat: semua file html
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-      },
       colors: {
         'tech-dark': '#0f172a',
+        'tech-accent': '#22d3ee', // Cyan-400
         'tech-card': '#1e293b',
-        'tech-accent': '#38bdf8',
       },
       animation: {
         'spin-slow': 'spin 12s linear infinite',
